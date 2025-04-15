@@ -453,7 +453,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     secretLink.addEventListener("click", () => {
       // Substitua a URL abaixo pela URL desejada
-      window.location.href = "https://www.exemplo.com/link-secreto"
+      window.location.href = "https://github.com/NeroPRDO/Segredo_Imortal"
     })
   })
   
