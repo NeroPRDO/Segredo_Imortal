@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Ancestral</title>
+    <link rel="stylesheet" href="./Styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Botão de reset invisível -->
+    <div id="reset-button" class="reset-hidden"></div>
+    
+    <div class="container">
+        <div class="parchment">
+            <div class="candle-light"></div>
+            <h1 class="title">Enigma Ancestral</h1>
+            <div class="divider">Você tem 3 Tentativas...</div>
+            
+            <!-- Formulário de Login (visível inicialmente) -->
+            <div id="login-form" class="login-container">
+                <div class="login-inner">
+                    <div class="form-group">
+                        <label for="username">Do que são erguidas as vitoriosas barreiras?</label>
+                        <input type="text" id="username" class="ancient-input" placeholder="Insira o nome imortal...">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Qual o número que permeia páginas sangrentas?</label>
+                        <input type="password" id="password" class="ancient-input" placeholder="Insira o valor universal...">
+                    </div>
+                    <button id="login-btn" class="ancient-btn">Revelar Segredos</button>
+                    <div id="error-message" class="error-message"></div>
+                </div>
+                <div class="seal"></div>
+            </div>
+            
+            <!-- Área do Poema -->
+            <div class="scroll" id="poem-container" style="display: none;">
+                <div class="poem" id="poem">
+                    <p>A noite guarda aquilo que cala,<p>
+                        <p>Semeia segredos onde a luz não fala.<p>
+                        <p>Quem escuta o sussurro do chão,<p>
+                        <p>Reconhece o caminho da imensidão.<p>
+                        
+                        <p>A brisa recita o que o tempo quis:<p>
+                        <p>Vinte e cinco silêncios que deixaste por um triz.<p>
+                        <p>A lembrança caminha na pele da folha,<p>
+                        <p>Onde a ausência se curva, onde a saudade molha.<p>
+                        
+                        <p>No espelho do musgo, o reflexo se desfaz.<p>
+                        <p>Ali repousa o rastro de três, fugaz.<p>
+                        <p>Nenhum eco retorna da pedra fria,<p>
+                        <p>Somente o som do vento e da poesia.<p>
+                        
+                        <p>Em tronco curvado pela estação,<p>
+                        <p>Esconde-se o ritmo do coração.<p>
+                        <p>Sob casca firme e sombra de raiz,<p>
+                        <p>Habita o pulso vivo do sete, por um triz.<p>
+                        
+                        <p>E quando a terra estremece, discreta,<p>
+                        <p>A alma se encontra onde tudo recomeça.<p>
+                        <p>Na dança dos galhos, tão sutil, tão gentil,<p>
+                        <p>Ecoa o compasso suave do seis, infantil.<p>
+                        
+                        <p>Num ponto onde o céu toca o chão,<p>
+                        <p>Surge o presságio, sem explicação.<p>
+                        <p>Uma palavra — uma só, sem alarde —<p>
+                        <p>Diz mais do que mil: é nove, que arde.<p>
+                        
+                        <p>Quem carrega o mapa da memória<p>
+                        <p>Conhece a curva da velha história.<p>
+                        <p>E entre as linhas do vento comum,<p>
+                        <p>Ouve o sussurro: apenas um.<p>
+                        
+                        <p>A jornada repete, sob véu de luar,<p>
+                        <p>Pois às vezes o destino quer lembrar.<p>
+                        <p>Quando a dúvida volta, outra vez vem algum,<p>
+                        <p>E o nome do passo é novamente um.<p>
+                        
+                        <p>A clareira se abre, a relva respira,<p>
+                        <p>E o tempo responde, embora delira.<p>
+                        <p>Por entre arbustos, no tempo que move,<p>
+                        <p>Surge o sopro de quarenta e nove.<p>
+                        
+                        <p>Mais adiante, onde a luz se desfaz,<p>
+                        <p>Ecoa um segredo envolto em paz.<p>
+                        <p>No contorno da rocha, do jeito que vem,<p>
+                        <p>Se revela o selo do antigo três, também.<p>
+                        
+                        <p>O musgo murmura, confia no tom,<p>
+                        <p>A direção revela o sétimo dom.<p>
+                        <p>Como no início, porém diferente,<p>
+                        <p>O nome do passo é sete, novamente.<p>
+                        
+                        <p>Mas o fim exige o toque preciso,<p>
+                        <p>Um som, um gesto, um leve aviso.<p>
+                        <p>Na quietude da relva, que o vento define,<p>
+                        <p>Se manifesta o velho nove, sublime.<p>
+                        
+                        <p>Agora, antes do destino selar,<p>
+                        <p>Escute o que não se pode falar.<p>
+                        <p>O último código — sim, ele é sete,<p>
+                        <p>E não se perde, por mais que se repete.<p>
+                        
+                        <p>A folha desce, beija o chão sutil,<p>
+                        <p>Marca a jornada no instante febril.<p>
+                        <p>No ponto exato onde o mundo se inclina,<p>
+                        <p>Repousa a verdade: um, fina linha.<p>
+                        
+                        <p>Na curva final do sopro do tempo,<p>
+                        <p>Uma promessa selada no vento.<p>
+                        <p>Com passo firme, sem nada por trás,<p>
+                        <p>Segue o caminho com a ajuda de cinco sinais.<p>
+                </div>
+            </div>
+            
+            <!-- Símbolos -->
+            <div class="symbols">
+                <span class="symbol">☽</span>
+                <span class="symbol">⚜</span>
+                <span class="symbol">⚱</span>
+                <span class="symbol"id="secret-link" >✴</span>
+                <span class="symbol">⚕</span>
+            </div>
+        </div>
+    </div>
+    <script src="./Script.js"></script>
+</body>
+</html>
